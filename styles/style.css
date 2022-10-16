@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Regular'), url('../fonts/MYRIADPRO-REGULAR.woff') format('woff');
+    }
+    
+
+@font-face {
+    font-family: 'Myriad Pro Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Condensed'), url('../fonts/MYRIADPRO-COND.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Myriad Pro Condensed Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Condensed Italic'), url('../fonts/MYRIADPRO-CONDIT.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Myriad Pro Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Light'), url('../fonts/MyriadPro-Light.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Myriad Pro Semibold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Semibold'), url('../fonts/MYRIADPRO-SEMIBOLD.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Myriad Pro Semibold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Semibold Italic'), url('../fonts/MYRIADPRO-SEMIBOLDIT.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Myriad Pro Bold Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Bold Condensed'), url('../fonts/MYRIADPRO-BOLDCOND.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Myriad Pro Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Myriad Pro Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Bold Italic'), url('../fonts/MYRIADPRO-BOLDIT.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Myriad Pro Bold Condensed Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Bold Condensed Italic'), url('../fonts/MYRIADPRO-BOLDCONDIT.woff') format('woff');
+    }
+
+
+ul, li {
+	display: block;
+}
+
+.body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+	width: 1600px;
+}
+
+.header	{
+	background: url('../images/Header.png') no-repeat center top / cover;
+}
+
+header a {
+	color: rgb(255, 255, 255);
+}
+.nav {
+	padding-top: 10px;
+	padding-left: 200px;
+	padding-right: 300px;
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	margin-right: 385px;
+}
+.menu {
+	display: flex;
+}
+.menu li {
+	margin-right: 69px;
+}
+.menu li a{
+	text-decoration: none;
+	font-size: 16px;
+	font-family: "Lato";
+
+}
+
+.header-text {
+	color: rgb(255, 255, 255);
+	padding-top: 306px; 
+	padding-bottom: 345px;
+	text-align: center;
+	padding-left: 15px;
+	margin-bottom: 5px;
+
+}
+
+.welcome-text {
+	text-transform: uppercase;
+	font-size: 72px;
+  	font-family: "Myriad Pro Bold";
+  	line-height: 1.2;
+  	
+}
+.welcome-helper {
+  font-size: 32px;
+  font-family: "Georgia";
+  line-height: 1.469;
+  padding-top: 0;
+}
