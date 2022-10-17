@@ -77,6 +77,12 @@
   src: local("Myriad Pro Bold Condensed Italic"),
     url("../fonts/MYRIADPRO-BOLDCONDIT.woff") format("woff");
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 *,
 *::before,
 *::after {
@@ -110,8 +116,6 @@ dd {
 html {
   overflow-x: hidden;
   overflow-y: scroll;
-  margin: 0;
-  padding: 0;
 }
 
 /* Выставляем основные настройки по-умолчанию для body */
