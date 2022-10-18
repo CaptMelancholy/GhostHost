@@ -170,7 +170,7 @@ select {
 }
 
 .header {
-  background: url("../images/Header.png") no-repeat top;
+  background: url("../images/Header.png") no-repeat top center / cover;
 }
 
 header a {
@@ -178,15 +178,16 @@ header a {
 }
 .nav {
   padding-top: 30px;
-  padding-left: 208px;
+  padding-left: 201px;
   padding-right: 300px;
   display: flex;
   align-items: center;
 }
 
 .logo {
-  margin-right: 424px;
+  margin-right: 430px;
 }
+
 .menu {
   display: flex;
 }
@@ -217,4 +218,50 @@ header a {
   font-family: "Georgia";
   line-height: 45px;
   padding-top: 0;
+}
+
+.footer {
+  background: #2a2a2a;
+  height: 300px;
+}
+
+.footer-nav {
+  padding-top: 23px;
+  padding-left: 201px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-footer {
+  margin-right: 625px;
+}
+
+.menu-footer {
+  display: flex;
+}
+
+.menu-footer li {
+  margin-right: 45px;
+}
+
+#selected {
+  color: white;
+}
+
+footer a {
+  color: #606060;
+}
+
+.menu-footer li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Lato";
+  line-height: 1.2;
+  margin-right: 45px;
+}
+
+.footer-line {
+  padding-top: 20px;
+  padding-left: 201px;
 }
