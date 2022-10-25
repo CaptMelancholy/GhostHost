@@ -176,14 +176,6 @@ select {
 }
 
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
 
 .header {
   background: url("../images/Header.png") no-repeat top center;
@@ -254,10 +246,43 @@ header a {
   padding-top: 0;
 }
 
-.register {
-  background: linear-gradient(-77deg, #21424a 0 50%, #2fac6c 50% 100%);
+/* .register1{
   width: 100%;
   height: 100%;
+  height: 100px;
+  padding-left: 470px;
+}
+
+.register-buttoms1 {
+  margin-top: 30px;
+  
+  display: inline-block;
+  align-items: center;
+  transform:skew(-21deg);
+}
+
+.register-buttoms1 > a > span {
+  display: inline-block;
+  transform: skew(21deg);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: "Lato";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.reg-buttom1 {
+  background: #2fac6c;
+}
+
+.login-buttom1 {
+  background: #21424a;
+} */
+
+.register {
+  background: linear-gradient(-77deg, #21424a 0 50%, #2fac6c 50% 100%);
+
   padding-left: 470px;
 }
 
@@ -265,7 +290,6 @@ header a {
   margin-top: 30px;
   margin-bottom: 30px;
   display: inline-block;
-
   align-items: center;
 }
 
@@ -305,7 +329,54 @@ header a {
 }
 
 .options {
-  align-items: center;
+  margin-left: 300px;
+  display: inline-flex;
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+.start-domain {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  margin: 5px;
+  border-right: 1px solid gray;
+}
+
+.center-domain {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  width: 600px;
+  margin: 5px;
+  outline: none;
+  border: none;
+  border-right: 1px solid gray;
+}
+
+.last-domain {
+  outline: none;
+  border: none;
+}
+
+.options-nav {
+  display: inline-flex;
+  margin-left: 300px;
+}
+
+.options-nav ul li {
+  padding: 100px;
+  border: 1px solid gray;
+}
+
+.option1,
+.option2,
+.option3,
+.option4 {
+  
+  
 }
 
 .footer {
