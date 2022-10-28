@@ -178,9 +178,8 @@ select {
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 
 .header {
-  background: url("../images/Header.png") no-repeat top center;
   background-size: 100%;
-  background-attachment: fixed;
+  background: url("../images/Header.png") no-repeat fixed top center;
 }
 
 header a {
@@ -304,10 +303,7 @@ header a {
 }
 
 .start-domain {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 10px 15px;
   margin: 5px;
   border-right: 1px solid rgb(203, 203, 203);
   color: rgb(203, 203, 203);
@@ -316,10 +312,7 @@ header a {
 }
 
 .center-domain {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 5px;
-  padding-left: 5px;
+  padding: 10px 5px;
   margin: 5px;
   width: 705px;
   outline: none;
@@ -329,10 +322,7 @@ header a {
 }
 
 .last-domain {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 10px;
   margin: 5px;
   outline: none;
   border: none;
@@ -455,9 +445,8 @@ td.top::before, td.bottom::before {
 } */
 
 .footer {
-  background: #2a2a2a;
   background-size: 100%;
-  background-attachment: fixed;
+  background: #2a2a2a fixed;
   height: 300px;
 }
 
