@@ -15,7 +15,10 @@
       rel="stylesheet"
       type="text/css"
     />
-    <script src="https://kit.fontawesome.com/927f260e41.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/927f260e41.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header id="header" class="header">
@@ -91,15 +94,6 @@
         <a href="#" class="reg-buttom">register</a>
       </div>
     </section>
-    <!-- <section id="register1" class="register1">
-      <div class="register-buttoms1">
-        <a href="#" class="login-buttom1"><span>login</span></a>
-        
-      </div>
-      <div class="register-buttoms1">
-        <a href="#" class="reg-buttom1"><span>register</span></a>
-      </div>
-    </section> -->
     <section id="search-shop" class="search-shop">
       <div class="shop-text">
         <h2 class="domain-article">Would you buy a new domain?</h2>
@@ -118,52 +112,103 @@
           <option value=".by">.by</option>
         </select>
       </div>
-      <!-- <div class="domain-price">
-        <table class="domain-table">
-          <tr class="table-row">
-            <td class="top">.COM</td>
-            <td class="top one">1 Year</td>
-            <td class="top price">$9.00 USD</td>
-            <td class="top">Transfer Price No</td>
-          </tr>
-          <tr class="table-row">
-            <td class="bottom">.NET</td>
-            <td class="bottom one">1 Year</td>
-            <td class="bottom price">$9.00 USD</td>
-            <td class="bottom"><span>Transfer Price No</span></td>
-          </tr>
-        </table>
-      </div> -->
     </section>
+      <div class="domain-table">
+        <ul class="domain-content">
+          <li class="domain-content-top">
+            <ul>
+             <li class="bottom-content-element"><a href="" class="element-content">.COM</a></li>
+              <li class="bottom-content-element"><a href="" class="element-content">1 Year</a></li>
+              <li class="bottom-content-element"><a href="" class="element-content">$9.00 USD</a></li>
+              <li class="bottom-content-element"><a href="" class="element-content">Transfer Price No</a></li>
+            </ul>
+          </li>
+          <li class="domain-content-bottom">
+            <ul>
+              <li class="bottom-content-element"><a href="" class="element-content">.NET</a></li>
+              <li class="bottom-content-element"><a href="" class="element-content">1 Year</a></li>
+              <li class="bottom-content-element"><a href="" class="element-content">$9.00 USD</a></li>
+              <li class="bottom-content-element"><a href="" class="element-content">Transfer Price No</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+    
 
-
+    <!-- <section class="slider">
+      <div class="slider-quote">
+        <p>“Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus enimqui</p> 
+        <p>interdum dolor pulvinar vitae.”</p>  
+      </div>
+      <div class="slider-buttoms">
+        <span class="author-quote"><b>John Doe</b></span>
+        <label for="swich1" class="bar">
+          <input type="radio" name="switch" checked />
+        </label>
+        <label for="swich2" class="bar">
+          <input type="radio" name="switch" />
+        </label>
+        <label for="swich3" class="bar">
+          <input type="radio" name="switch" />
+        </label>
+      </div>
+    </section> -->
+    <section class="slider">
+      <div class="slider-buttoms">
+        <label for="author2" class="quot" id="quot">
+        “Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus .”  
+        </label>
+        <span class="author-quote" id="author-quote" >John Doe</span>
+        <input id="author1" type="radio" name="switch" onclick="setSlide(1)" checked/>
+        <input id="author2" type="radio" name="switch" onclick="setSlide(2)" />
+        <input id="author3" type="radio" name="switch" onclick="setSlide(3)" />
+        <script src="scripts/slider.js"></script>
+      </div>
+      
+    </section>
     <section class="functions">
       <div class="functions-container">
-        <img src="../images/Functions/fast_servers.png" alt="Logo" class="functions_logo">
+        <img
+          src="../images/Functions/fast_servers.png"
+          alt="Logo"
+          class="functions_logo"
+        />
         <h3 class="functions_header">Fast servers</h3>
-        <p class="functions_text">Nulla dapibus neque augue, quis<br></p>
+        <p class="functions_text">Nulla dapibus neque augue, quis<br /></p>
         <p class="functions_text">tincidunt tortor aliquam vitae.</p>
       </div>
       <div class="functions-container">
-        <img src="../images/Functions/cloud_servers.png" alt="Logo" class="functions_logo">
+        <img
+          src="../images/Functions/cloud_servers.png"
+          alt="Logo"
+          class="functions_logo"
+        />
         <h3 class="functions_header">Cloud servers</h3>
-        <p class="functions_text">Nulla dapibus neque augue, quis<br></p>
+        <p class="functions_text">Nulla dapibus neque augue, quis<br /></p>
         <p class="functions_text">tincidunt tortor aliquam vitae.</p>
       </div>
       <div class="functions-container">
-        <img src="../images/Functions/domain_transfer.png" alt="Logo" class="functions_logo">
+        <img
+          src="../images/Functions/domain_transfer.png"
+          alt="Logo"
+          class="functions_logo"
+        />
         <h3 class="functions_header">Domain Transfer</h3>
-        <p class="functions_text">Nulla dapibus neque augue, quis<br></p>
+        <p class="functions_text">Nulla dapibus neque augue, quis<br /></p>
         <p class="functions_text">tincidunt tortor aliquam vitae.</p>
       </div>
       <div class="functions-container">
-        <img src="../images/Functions/live_support.png" alt="Logo" class="functions_logo">
+        <img
+          src="../images/Functions/live_support.png"
+          alt="Logo"
+          class="functions_logo"
+        />
         <h3 class="functions_header">Live Support</h3>
-        <p class="functions_text">Nulla dapibus neque augue, quis<br></p>
+        <p class="functions_text">Nulla dapibus neque augue, quis<br /></p>
         <p class="functions_text">tincidunt tortor aliquam vitae.</p>
       </div>
     </section>
-
 
     <footer id="footer" class="footer">
       <div class="container">
@@ -238,8 +283,14 @@
               </ul>
             </td>
             <td class="copyrights-contact">
-              <p><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;0000-0000-0000</p>
-              <p><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;informationteam@ghosthost.com</p>
+              <p>
+                <i class="fa-solid fa-phone"></i
+                >&nbsp;&nbsp;&nbsp;0000-0000-0000
+              </p>
+              <p>
+                <i class="fa-solid fa-envelope"></i
+                >&nbsp;&nbsp;&nbsp;informationteam@ghosthost.com
+              </p>
               <p><b>Lorem Ipsum Street, Lorem Avenue,</b></p>
               <p><b>Lorem Ipsum</b></p>
             </td>

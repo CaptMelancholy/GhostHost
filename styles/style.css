@@ -271,13 +271,14 @@ header a {
   padding-right: 515px;
 }
 
+
 .shop-text {
   margin-top: 95px;
   margin-bottom: 40px;
   text-align: center;
   margin-left: 350px;
   outline: none;
-  width: 890px;
+  max-width: 890px;
 }
 
 .domain-article {
@@ -297,9 +298,10 @@ header a {
 
 .options {
   margin-left: 350px;
-  margin-bottom: 95px;
+  margin-bottom: 40px;
   display: inline-flex;
   border: 1px solid rgb(203, 203, 203);
+  width: 890px;
 }
 
 .start-domain {
@@ -332,117 +334,136 @@ header a {
 
 }
 
-
-
-/* .domain-price {
-  color: #CBCBCB;
-  font-size: 14px;
-  padding-top: 20px;
-  text-align: center;
-  display: block;
-  border: 1px solid #D9D9D9;
-  margin: 0 auto;
-  width: 888px;
-  height: 173px;
-}
-
-.domain-table .table-row td.top::after {
-  content: "";
-  display: block;
-  right: -6px;
-  bottom: -6px;
-  width: 12px;
-  z-index: 1;
-  border-radius: 100%;
-  height: 12px;
-  position: absolute;
-  background-color: white;
-}
-
-.domain-table .table-row td.top:last-child:after {
-  content: "";
-  display: none;
-}
-
 .domain-table {
-  position: relative;
-  bottom: 10px;
-  font-size: 14px;
-  width: 856px;
-  height: 170px;
-  display: block;
+  margin-left: 350px;
+  margin-bottom: 90px;
+  padding: 0 20px 0 25px;
+  border: 1px solid rgb(203, 203, 203);
+  max-width: 890px;
 }
 
-.table-row {
-  margin: 0 14px;
+.domain-content {
   display: flex;
+  flex-direction: column;
 }
 
-.table-row td {
-  position: relative;
-  padding: 40px 40px;
-  width: 14%;
+.domain-content li ul{
+  display: flex;
+  flex-direction: row;
+  
 }
 
-.table-row td.top {
-  border-bottom: 1px solid #D9D9D9;
-  border-right: 1px solid #D9D9D9;
+li {
+  list-style-type: none; /* Убираем маркеры */
 }
 
-.table-row td.bottom {
-  border-right: 1px solid #D9D9D9;
+
+.domain-content-top {
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
-.table-row td.bottom:last-child, .table-row td.top:last-child {
-  border-right: none;
+.domain-content-bottom {
+  margin-top: 4px;
+  margin-bottom: 15px;
 }
 
-td.top:first-child {
-  padding-top: 9px;
-  padding-right: 55px;
+.bottom-content-element {
+  width: 220px;
+  height: 75px;
+  text-align: center;
 }
 
-td.top:last-child {
-  padding-top: 9px;
-  padding-left: 54px;
+.bottom-content-element:not(:last-child) {
+  border-right: 1px solid rgb(203, 203, 203);
 }
 
-td.bottom:first-child {
-  padding-right: 55px;
+
+.domain-content-top ul li a,
+.domain-content-bottom ul li a {
+  display: inline-block;
+  padding: 25px 0 25px 0;
+  text-decoration: none;
+  font-size: 14px;
+
+  color: rgb(203, 203, 203);
 }
 
-td.bottom:last-child {
-  padding-top: 20px;
-  padding-left: 54px;
-}
-
-td.bottom:nth-child(n) {
-  padding-top: 19px;
-  padding-bottom: 29px;
-}
-
-td.top.one {
-  padding: 9px 56px 9px 56px;
-}
-
-td.bottom.one {
-  padding: 19px 56px 19px 56px;
-}
-
-td.top.price {
-  padding: 9px 56px 9px 56px;
-}
-
-td.bottom.price {
-  padding: 18px 56px 19px 56px;
-}
-
-td.top::before, td.bottom::before {
+.domain-content-top ul li::after {
+  display: flex;
   content: '';
+  height: 8.5px;
+  border-bottom: 1px solid rgb(203, 203, 203);
+  width: 200px;
+  margin: 0 5px 0 5px;
+}
+
+.domain-content-bottom ul li::before {
+  display: flex;
+  content: '';
+  width: 200px;
+  margin: 0 5px 0 5px;
+    
+}
+
+.slider {
+  background: url("../images/Slider_BG.png") top center;
+  height: 190px;
+  color: white;
+}
+
+.slider-buttoms {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+label.quot {
   display: block;
-  width: 110px;
-  height: 18px;
-} */
+  opacity: 1;
+  order: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.author-quote {
+  display:block;
+  font-weight: bold;
+  align-items: center;
+}
+
+.author-quote::after {
+  display: inline-block;
+  content: '';
+  height: 12px;
+  width: 20px;
+  margin-right: 10px;
+  border-right: 1px solid rgb(147, 147, 147);
+}
+
+input[type="radio"] {
+  appearance: none;
+  background-color: rgba(255, 255, 255, 0);
+  margin: 0;
+  width: 7px;
+  height: 7px;
+  border: 1px solid white;
+  border-radius: 50%;
+  order: 1;
+}
+
+.slider-buttoms input {
+  margin-right: 12px;
+}
+
+span.author-quote {
+  margin-left: 710px;
+}
+
+input[type="radio"]:checked {
+  background: rgba(255, 255, 255, 1);
+  transition: background 0.5s ease;
+}
 
 .functions {
   height: 342px;
