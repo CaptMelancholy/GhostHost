@@ -471,6 +471,8 @@ input[type="radio"]:checked {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin-left: 18px;
+  margin-right: 18px;
 }
 
 .functions-container {
