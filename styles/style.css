@@ -187,15 +187,18 @@ header a {
 }
 .nav {
   padding-top: 30px;
-  padding-left: 201px;
-  padding-right: 300px;
+  margin-left: 200px;
+  padding-bottom: 0;
+  width: 1200px;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid rgb(104, 104, 104);
 }
 
 .logo {
   margin-right: 430px;
   padding-bottom: 32px;
+  
 }
 
 .menu {
@@ -204,6 +207,7 @@ header a {
 }
 .menu li {
   margin-right: 69px;
+  
 }
 
 .menu-points:hover {
@@ -212,17 +216,13 @@ header a {
 
 .menu-points {
   padding-bottom: 32px;
+  
 }
 
 .menu li a {
   text-decoration: none;
   font-size: 16px;
   font-family: "Lato";
-}
-
-.underline-nav {
-  padding-top: -5px;
-  padding-left: 201px;
 }
 
 .header-text {
