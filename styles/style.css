@@ -458,6 +458,175 @@ input[type="radio"]:checked {
   transition: background 0.5s ease;
 }
 
+.packages {
+  height: 765px;
+  background-image: url("../images/packages_BG.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.package-list {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 4%;
+  margin: auto;
+  /*padding-bottom: 6%;
+  max-width: 1200px;*/
+}
+
+.package-item {
+  background-color: white;
+  box-shadow: inset 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(170, 169, 169, 0.3);
+  min-width: 250px;
+  min-height: 560px;
+  font-family: Lato;
+}
+
+.package-item-basic {
+  border-top: 0.35rem solid #f9d423;
+}
+
+.package-item-normal {
+  border-top: 0.35rem solid #7f8c8d;
+}
+
+.package-item-big {
+  border-top: 0.35rem solid #f85f40;
+}
+
+.package-item-bigger {
+  border-top: 0.35rem solid #1abc9c;
+}
+
+.package-item_icon {
+  /*max-width: 64px;
+  max-height: 64px;
+  width: 96px;
+  height: 96px;*/
+  margin-top: 12.5%;
+  margin-bottom: 5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.package-item_title {
+  text-transform: uppercase;
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding-bottom: 7.5%;
+}
+
+.package-item_features {
+  display: flex;
+  width: fit-content;
+  margin: auto;
+
+  font-size: 16px;
+
+  padding-bottom: 10px;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+}
+.package-item_features td{
+  padding-top: 10px;
+}
+
+.package-item_features td:first-child {
+  font-family: "Lato Light";
+  color: #9c9c9c;
+  padding-right: 1em;
+  text-align: left;
+}
+
+.package-item_features td:last-child {
+  font-family: "Lato Semibold";
+  padding-left: 1em;
+  text-align: right;
+}
+
+.package-item_feature-values-basic {
+  color: #f9d423;
+}
+
+.package-item_feature-values-normal {
+  color: #7f8c8d;
+}
+
+.package-item_feature-values-big {
+  color: #f85f40;
+}
+
+.package-item_feature-values-bigger {
+  color: #1abc9c;
+}
+
+.package-item_price {
+  padding-top: 7.5%;
+  text-align: center;
+  color: black;
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 28px;
+  margin: auto;
+}
+
+.package-item_price::before {
+  content: "$";
+  vertical-align: super;
+  font-family: "Myriad Pro Regular";
+  font-size: 17px;
+}
+
+.package-item_price::after {
+  content: "/Mo";
+  color: #9c9c9c;
+  font-family: "Lato-Regular";
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.package-item_select{
+  padding-top: 5%;
+  border-top: 0.3rem solid;
+  width: fit-content;
+  margin: auto;
+}
+
+.package-item_select a {
+  text-transform: uppercase;
+  color: black;
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.package-item_select-basic {
+  border-color: #f9d423;
+}
+
+.package-item_select-normal {
+  border-color: #7f8c8d;
+}
+
+.package-item_select-big{
+  border-color: #f85f40;
+}
+
+.package-item_select-bigger {
+  border-color: #1abc9c;
+}
+
+
 .about-developers {
   margin-left: 200px;
   display: inline-flex;
@@ -518,8 +687,8 @@ input[type="radio"]:checked {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-left: 18px;
-  margin-right: 18px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .functions-container {
