@@ -574,7 +574,7 @@ input[type="radio"]:checked {
 .package-item_price::after {
   content: "/Mo";
   color: #9c9c9c;
-  font-family: "Lato-Regular";
+  font-family: "Lato Regular";
   font-size: 13px;
   font-weight: 300;
 }
@@ -588,6 +588,7 @@ input[type="radio"]:checked {
 
 .package-item_select a {
   text-transform: uppercase;
+  text-decoration: none;
   color: black;
   font-family: "Lato";
   font-weight: bold;
@@ -688,23 +689,21 @@ input[type="radio"]:checked {
 }
 
 .functions_logo {
-  margin: 15px;
+  margin-bottom: 15px;
 }
 
 .functions_header {
-  color: rgb(48, 48, 48);
-  font-family: Lato, sans-serif;
-  font-style: heavy;
+  color: #303030;
+  font-family: "Myriad Pro Regular";
+  font-weight: bold;
   font-size: 18px;
 }
 
-.functions-text {
-  color: rgb(126, 126, 126);
-  font-family: FontAwesome, sans-serif;
-  font-style: regular;
+.functions_text {
+  color: #7e7e7e;
+  font-family: "Lato Light";
   font-size: 16px;
   text-align: center;
-  margin: 15px;
 }
 
 .footer {
