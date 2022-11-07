@@ -105,7 +105,6 @@
   box-sizing: border-box;
 }
 
-/* Убираем внутренние отступы */
 ul[class],
 ol[class] {
   padding: 0;
@@ -134,7 +133,6 @@ html {
   overflow-y: scroll;
 }
 
-/* Выставляем основные настройки по-умолчанию для body */
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
@@ -145,37 +143,25 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
 ul[class],
 ol[class] {
   list-style: none;
 }
-
-/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-/* Упрощаем работу с изображениями */
 img {
   max-width: 100%;
   display: block;
 }
 
-/* Указываем понятную периодичность в потоке данных у article*/
-article > * + * {
-  margin-top: 1em;
-}
-
-/* Наследуем шрифты для инпутов и кнопок */
 input,
 button,
 textarea,
 select {
   font: inherit;
 }
-
-/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 
 .header {
   background-size: 100%;
@@ -192,7 +178,7 @@ header a {
   width: 1200px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid rgb(104, 104, 104);
+  border-bottom: 1px solid #2d2e30;
 }
 
 .logo {
@@ -201,7 +187,6 @@ header a {
 }
 
 .menu {
-
   display: flex;
 }
 .menu li {
@@ -244,14 +229,13 @@ header a {
 }
 
 .register {
-  background: linear-gradient(-77deg, #21424a 0 50%, #2fac6c 50% 100%);
-
+  background: linear-gradient(-77deg, #2fac6c 0 50%, #21424a 50% 100%);
+  height: 118px;
   padding-left: 470px;
 }
 
 .register-buttoms {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 43px;
   display: inline-block;
   align-items: center;
 }
@@ -349,7 +333,7 @@ header a {
 }
 
 li {
-  list-style-type: none; /* Убираем маркеры */
+  list-style-type: none;
 }
 
 .domain-content-top {
@@ -358,7 +342,7 @@ li {
 }
 
 .domain-content-bottom {
-  margin-top: 4px;
+  margin-top: 10px;
   margin-bottom: 15px;
 }
 
@@ -378,7 +362,6 @@ li {
   padding: 25px 0 25px 0;
   text-decoration: none;
   font-size: 14px;
-
   color: rgb(203, 203, 203);
 }
 
@@ -479,7 +462,8 @@ input[type="radio"]:checked {
 
 .package-item {
   background-color: white;
-  box-shadow: inset 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(170, 169, 169, 0.3);
+  box-shadow: inset 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(170, 169, 169, 0.3);
   min-width: 250px;
   min-height: 560px;
   font-family: Lato;
@@ -537,7 +521,7 @@ input[type="radio"]:checked {
   border-top: 1px solid #dfdfdf;
   border-bottom: 1px solid #dfdfdf;
 }
-.package-item_features td{
+.package-item_features td {
   padding-top: 10px;
 }
 
@@ -595,7 +579,7 @@ input[type="radio"]:checked {
   font-weight: 300;
 }
 
-.package-item_select{
+.package-item_select {
   padding-top: 5%;
   border-top: 0.3rem solid;
   width: fit-content;
@@ -618,7 +602,7 @@ input[type="radio"]:checked {
   border-color: #7f8c8d;
 }
 
-.package-item_select-big{
+.package-item_select-big {
   border-color: #f85f40;
 }
 
@@ -626,13 +610,12 @@ input[type="radio"]:checked {
   border-color: #1abc9c;
 }
 
-
 .about-developers {
   margin-left: 200px;
   display: inline-flex;
   margin-bottom: 105px;
-  padding-top: 105px; 
-  border-top: 1px dotted rgb(126, 126, 126);
+  padding-top: 105px;
+  border-top: 1px dashed #d8d8d8;
 }
 
 .about-us {
@@ -653,7 +636,7 @@ input[type="radio"]:checked {
   display: inline-flex;
   text-align: center;
   padding-left: 100px;
-  border-left: 1px dotted rgb(126, 126, 126);
+  border-left: 1px dashed #d8d8d8;
 }
 
 .author-block div {
@@ -668,16 +651,18 @@ input[type="radio"]:checked {
   padding-right: 125px;
 }
 
-.author-block div i {
+.author-block div a {
   margin-top: 15px;
+  color: #bfbfbf;
+  text-decoration: none;
   cursor: pointer;
 }
 
-.author-block div i:not(:last-child) {
+.author-block div a:not(:last-child) {
   margin-right: 25px;
 }
 
-.author-block div i:hover {
+.author-block div a:hover {
   color: #1f89ba;
 }
 
@@ -745,7 +730,6 @@ input[type="radio"]:checked {
 
 .menu-footer li:not(:last-child) {
   margin-right: 45px;
-  
 }
 
 .menu-footer li a {
@@ -782,12 +766,12 @@ input[type="radio"]:checked {
 
 .copyrights-info {
   padding: 25px 85px 25px 0;
-  border-right: 1px solid rgb(104, 104, 104);
+  border-right: 1px solid #393939;
 }
 
 .copyrights-menu {
   padding: 25px 105px 25px 105px;
-  border-right: 1px solid rgb(104, 104, 104);
+  border-right: 1px solid #393939;
   display: inline-flex;
   quotes: "<" ">";
 }
