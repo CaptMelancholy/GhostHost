@@ -517,7 +517,8 @@ input[type="radio"]:checked {
 }
 
 .package-item_features td:first-child {
-  font-family: "Lato Light";
+  font-family: "Lato";
+  font-weight: 350;
   color: #9c9c9c;
   padding-right: 1em;
   text-align: left;
@@ -692,7 +693,8 @@ input[type="radio"]:checked {
 
 .functions_text {
   color: #7e7e7e;
-  font-family: "Lato Light";
+  font-family: "Lato";
+  font-weight: 350;
   font-size: 16px;
   text-align: center;
 }
