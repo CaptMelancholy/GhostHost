@@ -660,6 +660,10 @@ input[type="radio"]:checked {
   color: #bfbfbf;
 }
 
+.author-block img {
+  padding-bottom: 20px;
+}
+
 .authors-block div:not(:last-child) {
   padding-right: 125px;
 }
