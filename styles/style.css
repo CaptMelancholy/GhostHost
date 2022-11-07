@@ -201,11 +201,12 @@ header a {
 }
 
 .menu {
-  cursor: pointer;
+
   display: flex;
 }
 .menu li {
   margin-right: 69px;
+  cursor: pointer;
 }
 
 .menu-points:hover {
@@ -326,6 +327,7 @@ header a {
   background: none;
   color: rgb(203, 203, 203);
   line-height: 1.2;
+  cursor: pointer;
 }
 
 .domain-table {
@@ -440,6 +442,7 @@ input[type="radio"] {
   border: 1px solid white;
   border-radius: 50%;
   order: 1;
+  cursor: pointer;
 }
 
 .slider-buttoms input {
@@ -494,6 +497,7 @@ input[type="radio"]:checked {
 
 .author-block div i {
   margin-top: 15px;
+  cursor: pointer;
 }
 
 .author-block div i:not(:last-child) {
@@ -562,11 +566,15 @@ input[type="radio"]:checked {
 
 .menu-footer {
   display: flex;
-  cursor: pointer;
 }
 
-.menu-footer li {
+.menu-footer li:not(:last-child) {
   margin-right: 45px;
+  
+}
+
+.menu-footer li a {
+  cursor: pointer;
 }
 
 .footer-points {
@@ -606,11 +614,14 @@ input[type="radio"]:checked {
   padding: 25px 105px 25px 105px;
   border-right: 1px solid rgb(104, 104, 104);
   display: inline-flex;
-  cursor: pointer;
   quotes: "<" ">";
 }
 .copyrights-contact {
   padding: 0 0 25px 80px;
+}
+
+.copyrights-menu ul li {
+  cursor: pointer;
 }
 
 .copyrights-menu ul li:hover {
