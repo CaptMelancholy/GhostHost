@@ -187,10 +187,12 @@ header a {
 }
 .nav {
   padding-top: 30px;
-  padding-left: 201px;
-  padding-right: 300px;
+  margin-left: 200px;
+  padding-bottom: 0;
+  width: 1200px;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid rgb(104, 104, 104);
 }
 
 .logo {
@@ -199,11 +201,12 @@ header a {
 }
 
 .menu {
-  cursor: pointer;
+
   display: flex;
 }
 .menu li {
   margin-right: 69px;
+  cursor: pointer;
 }
 
 .menu-points:hover {
@@ -218,11 +221,6 @@ header a {
   text-decoration: none;
   font-size: 16px;
   font-family: "Lato";
-}
-
-.underline-nav {
-  padding-top: -5px;
-  padding-left: 201px;
 }
 
 .header-text {
@@ -271,7 +269,6 @@ header a {
   padding-right: 515px;
 }
 
-
 .shop-text {
   margin-top: 95px;
   margin-bottom: 40px;
@@ -310,7 +307,6 @@ header a {
   border-right: 1px solid rgb(203, 203, 203);
   color: rgb(203, 203, 203);
   line-height: 1.2;
-
 }
 
 .center-domain {
@@ -331,7 +327,7 @@ header a {
   background: none;
   color: rgb(203, 203, 203);
   line-height: 1.2;
-
+  cursor: pointer;
 }
 
 .domain-table {
@@ -347,16 +343,14 @@ header a {
   flex-direction: column;
 }
 
-.domain-content li ul{
+.domain-content li ul {
   display: flex;
   flex-direction: row;
-  
 }
 
 li {
   list-style-type: none; /* Убираем маркеры */
 }
-
 
 .domain-content-top {
   margin-top: 15px;
@@ -378,7 +372,6 @@ li {
   border-right: 1px solid rgb(203, 203, 203);
 }
 
-
 .domain-content-top ul li a,
 .domain-content-bottom ul li a {
   display: inline-block;
@@ -391,7 +384,7 @@ li {
 
 .domain-content-top ul li::after {
   display: flex;
-  content: '';
+  content: "";
   height: 8.5px;
   border-bottom: 1px solid rgb(203, 203, 203);
   width: 200px;
@@ -400,10 +393,9 @@ li {
 
 .domain-content-bottom ul li::before {
   display: flex;
-  content: '';
+  content: "";
   width: 200px;
   margin: 0 5px 0 5px;
-    
 }
 
 .slider {
@@ -427,14 +419,14 @@ label.quot {
   margin-bottom: 20px;
 }
 .author-quote {
-  display:block;
+  display: block;
   font-weight: bold;
   align-items: center;
 }
 
 .author-quote::after {
   display: inline-block;
-  content: '';
+  content: "";
   height: 12px;
   width: 20px;
   margin-right: 10px;
@@ -450,6 +442,7 @@ input[type="radio"] {
   border: 1px solid white;
   border-radius: 50%;
   order: 1;
+  cursor: pointer;
 }
 
 .slider-buttoms input {
@@ -463,6 +456,60 @@ span.author-quote {
 input[type="radio"]:checked {
   background: rgba(255, 255, 255, 1);
   transition: background 0.5s ease;
+}
+
+.about-developers {
+  margin-left: 200px;
+  display: inline-flex;
+  margin-bottom: 105px;
+  padding-top: 105px; 
+  border-top: 1px dotted rgb(126, 126, 126);
+}
+
+.about-us {
+  color: #747474;
+  font-family: "Lato";
+  font-weight: 100;
+  margin-right: 100px;
+}
+
+.about-headline {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 35px;
+  color: black;
+}
+
+.authors-block {
+  display: inline-flex;
+  text-align: center;
+  padding-left: 100px;
+  border-left: 1px dotted rgb(126, 126, 126);
+}
+
+.author-block div {
+  color: #bfbfbf;
+}
+
+.authors-block div:not(:last-child) {
+  padding-right: 125px;
+}
+
+.author-block div i {
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.author-block div i:not(:last-child) {
+  margin-right: 25px;
+}
+
+.author-block div i:hover {
+  color: #1f89ba;
+}
+
+.designer-prof {
+  color: #8e8e8e;
 }
 
 .functions {
@@ -508,7 +555,6 @@ input[type="radio"]:checked {
   height: 300px;
 }
 
-
 .footer-nav {
   padding-top: 23px;
   padding-left: 201px;
@@ -522,11 +568,15 @@ input[type="radio"]:checked {
 
 .menu-footer {
   display: flex;
-  cursor: pointer;
 }
 
-.menu-footer li {
+.menu-footer li:not(:last-child) {
   margin-right: 45px;
+  
+}
+
+.menu-footer li a {
+  cursor: pointer;
 }
 
 .footer-points {
@@ -566,11 +616,14 @@ input[type="radio"]:checked {
   padding: 25px 105px 25px 105px;
   border-right: 1px solid rgb(104, 104, 104);
   display: inline-flex;
-  cursor: pointer;
   quotes: "<" ">";
 }
 .copyrights-contact {
   padding: 0 0 25px 80px;
+}
+
+.copyrights-menu ul li {
+  cursor: pointer;
 }
 
 .copyrights-menu ul li:hover {
@@ -578,15 +631,12 @@ input[type="radio"]:checked {
 }
 
 .copyrights-menu ul li:hover:before {
-
   content: "> \00a0 \00a0";
 }
 
 .copyrights-menu ul li:not(:hover):before {
   content: ">\00a0";
 }
-
-
 
 .copyrights-menu ul:not(:last-child) {
   margin-right: 75px;
@@ -595,5 +645,3 @@ input[type="radio"]:checked {
 .copyrights-menu ul li:not(:last-child) {
   margin-bottom: 5px;
 }
-
-

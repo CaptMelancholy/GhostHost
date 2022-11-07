@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -22,7 +22,7 @@
   </head>
   <body>
     <header id="header" class="header">
-      <div class="container">
+      <div>
         <div class="nav">
           <img src="images/logo_header.png" alt="GhostHost" class="logo" />
           <ul class="menu">
@@ -70,11 +70,6 @@
             </li>
           </ul>
         </div>
-        <img
-          src="/images/Header_Stick.png"
-          alt="Error"
-          class="underline-nav"
-        />
         <div class="header-text">
           <h1 class="welcome-text">Hello!</h1>
           <div class="welcome-helper">
@@ -104,7 +99,11 @@
       </div>
       <div class="options">
         <span class="start-domain">www.</span>
-        <input type="text" placeholder="What do you want?" class="center-domain" />
+        <input
+          type="text"
+          placeholder="What do you want?"
+          class="center-domain"
+        />
         <select id="domain-names" class="last-domain">
           <option value=".com">.com</option>
           <option value=".us">.us</option>
@@ -113,65 +112,120 @@
         </select>
       </div>
     </section>
-      <div class="domain-table">
-        <ul class="domain-content">
-          <li class="domain-content-top">
-            <ul>
-             <li class="bottom-content-element"><a href="" class="element-content">.COM</a></li>
-              <li class="bottom-content-element"><a href="" class="element-content">1 Year</a></li>
-              <li class="bottom-content-element"><a href="" class="element-content">$9.00 USD</a></li>
-              <li class="bottom-content-element"><a href="" class="element-content">Transfer Price No</a></li>
-            </ul>
-          </li>
-          <li class="domain-content-bottom">
-            <ul>
-              <li class="bottom-content-element"><a href="" class="element-content">.NET</a></li>
-              <li class="bottom-content-element"><a href="" class="element-content">1 Year</a></li>
-              <li class="bottom-content-element"><a href="" class="element-content">$9.00 USD</a></li>
-              <li class="bottom-content-element"><a href="" class="element-content">Transfer Price No</a></li>
-            </ul>
-          </li>
-          
-        </ul>
+    <div class="domain-table">
+      <ul class="domain-content">
+        <li class="domain-content-top">
+          <ul>
+            <li class="bottom-content-element">
+              <a href="" class="element-content">.COM</a>
+            </li>
+            <li class="bottom-content-element">
+              <a href="" class="element-content">1 Year</a>
+            </li>
+            <li class="bottom-content-element">
+              <a href="" class="element-content">$9.00 USD</a>
+            </li>
+            <li class="bottom-content-element">
+              <a href="" class="element-content">Transfer Price No</a>
+            </li>
+          </ul>
+        </li>
+        <li class="domain-content-bottom">
+          <ul>
+            <li class="bottom-content-element">
+              <a href="" class="element-content">.NET</a>
+            </li>
+            <li class="bottom-content-element">
+              <a href="" class="element-content">1 Year</a>
+            </li>
+            <li class="bottom-content-element">
+              <a href="" class="element-content">$9.00 USD</a>
+            </li>
+            <li class="bottom-content-element">
+              <a href="" class="element-content">Transfer Price No</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <section class="about-developers">
+      <div class="about-us">
+        <p class="about-headline"><b>About</b> Us</p>
+        <br />
+        <b><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Praesent feugiat eget diam sit amet molestie.Curabitur.</p>
+          <p>ut ipsum bibendum tortor lacinia fermentum nec joeıa.</p>
+          <p>Mauris at augue libero. Fusce posuere, sapien nec poır.</p>
+          <p>Uaee augsuada sed mauris in tincidunt...</p></b>
       </div>
-
+      <div class="authors-block">
+        <div class="author-block">
+          <img src="images/jonny_doe.png" alt="" />
+          <p><b>Jonny Doe</b></p>
+          <p class="designer-prof">Designer</p>
+          <div class="author-icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-link"></i>
+          </div>
+        </div>
+        <div class="author-block">
+          <img src="images/john_doe.png" alt="" />
+          <p><b>John Doe</b></p>
+          <p class="designer-prof">Designer</p>
+          <div class="author-icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-link"></i>
+          </div>
+        </div>
+        <div class="author-block">
+          <img src="images/johnathan_doe.png" alt="" />
+          <p><b>Johnathan Doe</b></p>
+          <p class="designer-prof">Designer</p>
+          <div class="author-icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-link"></i>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="slider">
       <div class="slider-buttoms">
         <label for="author2" class="quot" id="quot">
-        “Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus .”  
+          “Suspendisse tempor turpis odio, sit amet cursus leo consequat non.
+          Maecenas lacinia faucibus .”
         </label>
-        <span class="author-quote" id="author-quote" >John Doe</span>
-        <input id="author1" type="radio" name="switch" onclick="setSlide(1)" checked/>
+        <span class="author-quote" id="author-quote">John Doe</span>
+        <input
+          id="author1"
+          type="radio"
+          name="switch"
+          onclick="setSlide(1)"
+          checked
+        />
         <input id="author2" type="radio" name="switch" onclick="setSlide(2)" />
         <input id="author3" type="radio" name="switch" onclick="setSlide(3)" />
         <script src="scripts/slider.js"></script>
       </div>
-      
     </section>
     <section class="functions">
       <div class="functions-container">
-        <img
-          src="/images/functions/fast_servers.png"
-          alt="Logo"
-          class="functions_logo"
-        />
+        <img src="images/fast_servers.png" alt="Logo" class="functions_logo" />
         <h3 class="functions_header">Fast servers</h3>
         <p class="functions_text">Nulla dapibus neque augue, quis<br /></p>
         <p class="functions_text">tincidunt tortor aliquam vitae.</p>
       </div>
       <div class="functions-container">
-        <img
-          src="/images/functions/cloud_servers.png"
-          alt="Logo"
-          class="functions_logo"
-        />
+        <img src="images/cloud_servers.png" alt="Logo" class="functions_logo" />
         <h3 class="functions_header">Cloud servers</h3>
         <p class="functions_text">Nulla dapibus neque augue, quis<br /></p>
         <p class="functions_text">tincidunt tortor aliquam vitae.</p>
       </div>
       <div class="functions-container">
         <img
-          src="/images/functions/domain_transfer.png"
+          src="images/domain_transfer.png"
           alt="Logo"
           class="functions_logo"
         />
@@ -180,11 +234,7 @@
         <p class="functions_text">tincidunt tortor aliquam vitae.</p>
       </div>
       <div class="functions-container">
-        <img
-          src="/images/functions/live_support.png"
-          alt="Logo"
-          class="functions_logo"
-        />
+        <img src="images/live_support.png" alt="Logo" class="functions_logo" />
         <h3 class="functions_header">Live Support</h3>
         <p class="functions_text">Nulla dapibus neque augue, quis<br /></p>
         <p class="functions_text">tincidunt tortor aliquam vitae.</p>
@@ -192,7 +242,7 @@
     </section>
 
     <footer id="footer" class="footer">
-      <div class="container">
+      <div>
         <div class="footer-nav">
           <img src="images/logo_footer.png" alt="Error" class="logo-footer" />
           <ul class="menu-footer">
