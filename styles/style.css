@@ -682,11 +682,13 @@ input[type="radio"]:checked {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 
 .functions-container {
+  max-width: 230px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -763,7 +765,7 @@ input[type="radio"]:checked {
 }
 
 .footer-copyrights {
-  font-size: 14px;
+  font-size: 15px;
   font-family: "Lato";
   color: rgb(104, 104, 104);
   line-height: 1.733;
@@ -772,7 +774,8 @@ input[type="radio"]:checked {
 }
 
 .copyrights-info {
-  padding: 25px 85px 25px 0;
+  max-width: 375px;
+  padding: 25px 80px 25px 0;
   border-right: 1px solid #393939;
 }
 
@@ -787,7 +790,13 @@ input[type="radio"]:checked {
   quotes: "<" ">";
 }
 .copyrights-contact {
-  padding: 0 0 25px 80px;
+  max-width: 325px;
+  line-height: 2em;
+  padding: 25px 0 25px 80px;
+}
+.copyrights-contact p {
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .copyrights-menu ul li {
