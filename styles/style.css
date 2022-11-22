@@ -567,6 +567,7 @@ li {
 }
 
 .about-headline {
+  margin-bottom: 0.5em;
   font-family: "Lato";
   font-weight: 400;
   font-size: 35px;
@@ -773,6 +774,10 @@ input[type="radio"]:checked {
 .copyrights-info {
   padding: 25px 85px 25px 0;
   border-right: 1px solid #393939;
+}
+
+.copyrights-info-designer {
+  margin-top: 1em;
 }
 
 .copyrights-menu {
