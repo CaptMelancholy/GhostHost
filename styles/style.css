@@ -168,6 +168,7 @@ select {
 .header {
   background-size: 100%;
   background: url("../images/Header.png") no-repeat fixed top center;
+  height: 943px;
 }
 
 header a {
@@ -212,10 +213,8 @@ header a {
 
 .header-text {
   color: rgb(255, 255, 255);
-  padding-top: 346px;
-  padding-bottom: 335px;
+  padding-top: 20%;
   text-align: center;
-  padding-left: 80px;
 }
 
 .welcome-text {
@@ -267,11 +266,16 @@ header a {
 
 /* Domain Search Part */
 
+.search-shop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .shop-text {
   margin-top: 95px;
   margin-bottom: 40px;
   text-align: center;
-  margin-left: 350px;
   outline: none;
   max-width: 890px;
 }
@@ -292,7 +296,6 @@ header a {
 }
 
 .options {
-  margin-left: 350px;
   margin-bottom: 40px;
   display: inline-flex;
   border: 1px solid rgb(203, 203, 203);
@@ -329,7 +332,7 @@ header a {
 }
 
 .domain-table {
-  margin-left: 350px;
+  margin: auto;
   margin-bottom: 90px;
   padding: 0 20px 0 25px;
   border: 1px solid rgb(203, 203, 203);
