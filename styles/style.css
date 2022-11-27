@@ -176,25 +176,27 @@ header a {
 }
 .nav {
   padding-top: 30px;
-  margin-left: 200px;
-  padding-bottom: 0;
-  width: 1200px;
+  max-width: 1200px;
   display: flex;
-  align-items: center;
+  margin: auto;
   border-bottom: 1px solid #2d2e30;
 }
 
 .logo {
-  margin-right: 430px;
+  margin-right: auto;
   padding-bottom: 32px;
 }
 
 .menu {
   display: flex;
+  width: 640px;
 }
 .menu li {
-  margin-right: 69px;
   cursor: pointer;
+}
+
+.menu li:not(:last-child) {
+  margin-right: 69px;
 }
 
 .menu-points:hover {
@@ -202,6 +204,7 @@ header a {
 }
 
 .menu-points {
+  transition: 0.5s;
   padding-bottom: 32px;
 }
 
@@ -226,12 +229,10 @@ header a {
   font-size: 32px;
   font-family: "Georgia";
   line-height: 45px;
-  padding-top: 0;
 }
 
 .register {
   background: linear-gradient(-77deg, #2fac6c 0 50%, #21424a 50% 100%);
-  height: 121px;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -245,23 +246,20 @@ header a {
   font-family: "Lato";
   color: rgb(255, 255, 255);
   font-weight: bold;
+  align-items: center;
 }
 
-.login-buttom{
+.login-buttom {
   display: flex;
-  align-items: center;
   justify-content: center;
   width: 800px;
   height: 121px;
-  padding-left: 200px;
 }
 .reg-buttom {
   display: flex;
-  align-items: center;
   justify-content: center;
   width: 800px;
   height: 121px;
-  padding-right: 200px;
 }
 
 /* Domain Search Part */
@@ -291,7 +289,6 @@ header a {
 .domain-info {
   font-size: 16px;
   font-family: "Montserrat Ultra Light";
-  /* color: rgb(162, 162, 162); */
   line-height: 1.2;
 }
 
@@ -332,8 +329,7 @@ header a {
 }
 
 .domain-table {
-  margin: auto;
-  margin-bottom: 90px;
+  margin: auto auto 90px;
   padding: 0 20px 0 25px;
   border: 1px solid rgb(203, 203, 203);
   max-width: 890px;
@@ -367,6 +363,7 @@ li {
   width: 220px;
   height: 75px;
   text-align: center;
+  justify-content: center;
 }
 
 .bottom-content-element:not(:last-child) {
@@ -385,7 +382,7 @@ li {
 .domain-content-top ul li::after {
   display: flex;
   content: "";
-  height: 8.5px;
+  height: 11px;
   border-bottom: 1px solid rgb(203, 203, 203);
   width: 200px;
   margin: 0 5px 0 5px;
@@ -447,10 +444,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 12.5%;
-  margin-bottom: 5%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 12.5% auto 5%;
 }
 
 .package-item_title {
@@ -566,10 +560,11 @@ li {
 /* About Us Part */
 
 .about-developers {
-  margin-left: 200px;
-  display: inline-flex;
-  margin-bottom: 105px;
-  padding-top: 105px;
+  display: flex;
+  margin: auto;
+  width: 1200px;
+  height: 450px;
+  align-items: center;
   border-top: 1px dashed #d8d8d8;
 }
 
@@ -577,6 +572,7 @@ li {
   color: #747474;
   font-family: "Lato";
   font-weight: 100;
+  width: 382px;
   margin-right: 100px;
 }
 
@@ -589,7 +585,8 @@ li {
 }
 
 .authors-block {
-  display: inline-flex;
+  width: 664px;
+  display: flex;
   text-align: center;
   padding-left: 100px;
   border-left: 1px dashed #d8d8d8;
@@ -597,14 +594,13 @@ li {
 
 .author-block div {
   color: #bfbfbf;
+  width: 210px;
 }
 
 .author-block img {
   padding-bottom: 20px;
-}
-
-.authors-block div:not(:last-child) {
-  padding-right: 125px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .author-block div a {
@@ -612,10 +608,11 @@ li {
   color: #bfbfbf;
   text-decoration: none;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .author-block div a:not(:last-child) {
-  margin-right: 25px;
+  margin-right: 7px;
 }
 
 .author-block div a:hover {
@@ -731,32 +728,37 @@ input[type="radio"]:checked {
 /* Footer Part */
 
 .footer {
-  background-size: 100%;
   background: #2a2a2a fixed;
   height: 300px;
 }
 
+.footer div {
+  max-width: 1200px;
+  margin: auto;
+}
+
 .footer-nav {
-  padding-top: 23px;
-  padding-left: 201px;
   display: flex;
   align-items: center;
+  height: 75px;
+  border-bottom: 1px solid #393939;
 }
 
 .logo-footer {
-  margin-right: 625px;
+  margin-right: auto;
 }
 
 .menu-footer {
   display: flex;
-}
-
-.menu-footer li:not(:last-child) {
-  margin-right: 45px;
+  max-width: 440px;
 }
 
 .menu-footer li a {
   cursor: pointer;
+}
+
+.menu-footer li a:not(:last-child) {
+  margin-right: 45px;
 }
 
 .footer-points {
@@ -765,32 +767,31 @@ input[type="radio"]:checked {
   font-size: 13px;
   font-family: "Lato";
   line-height: 1.2;
-  margin-right: 45px;
   color: #606060;
+  transition: 0.5s;
 }
 
 .footer-points:hover {
   color: white;
 }
 
-.footer-line {
-  margin-top: 20px;
-  margin-left: 201px;
-}
-
 .footer-copyrights {
+  height: 195px;
+  width: 1200px;
+  margin: auto;
+  display: grid;
+  align-items: center;
   font-size: 15px;
   font-family: "Lato";
   color: rgb(104, 104, 104);
   line-height: 1.733;
-  margin-top: 23px;
-  margin-left: 201px;
 }
 
 .copyrights-info {
-  max-width: 375px;
-  padding: 25px 80px 25px 0;
+  margin: auto;
+  width: 375px;
   border-right: 1px solid #393939;
+  padding-right: 80px;
 }
 
 .copyrights-info-designer {
@@ -798,15 +799,18 @@ input[type="radio"]:checked {
 }
 
 .copyrights-menu {
-  padding: 25px 105px 25px 105px;
+  width: 500px;
+  height: 145px;
   border-right: 1px solid #393939;
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
   quotes: "<" ">";
 }
 .copyrights-contact {
-  max-width: 325px;
+  width: 325px;
   line-height: 2em;
-  padding: 25px 0 25px 80px;
+  padding-left: 80px;
 }
 .copyrights-contact p {
   font-size: 14px;
@@ -815,18 +819,22 @@ input[type="radio"]:checked {
 
 .copyrights-menu ul li {
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .copyrights-menu ul li:hover {
   color: white;
+  transition: 0.5s;
 }
 
 .copyrights-menu ul li:hover:before {
   content: "> \00a0 \00a0";
+  transition: 0.5s;
 }
 
 .copyrights-menu ul li:not(:hover):before {
   content: ">\00a0";
+  transition: 0.5s;
 }
 
 .copyrights-menu ul:not(:last-child) {
