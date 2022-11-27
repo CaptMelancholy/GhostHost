@@ -629,6 +629,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 label.quot {
   display: block;
@@ -668,10 +669,6 @@ input[type="radio"] {
 
 .slider-buttoms input {
   margin-right: 12px;
-}
-
-span.author-quote {
-  margin-left: 710px;
 }
 
 input[type="radio"]:checked {
