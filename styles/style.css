@@ -140,7 +140,7 @@ body {
   line-height: 1.5;
   padding: 0;
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato";
 }
 
 ul[class],
@@ -166,7 +166,6 @@ select {
 /* Header Part */
 
 .header {
-  background-size: 100%;
   background: url("../images/Header.png") no-repeat fixed top center;
   height: 943px;
 }
@@ -622,6 +621,7 @@ li {
 .slider {
   background: url("../images/Slider_BG.png") top center;
   height: 190px;
+  width: auto;
   color: white;
 }
 
